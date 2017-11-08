@@ -1,0 +1,219 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://google.com/
+ Description:  Twenty Seventeen Child Theme
+ Author:       Josh Fairbans
+ Author URI:   jfairbanks.imgd.ca
+ Template:     twentyseventeen
+ Version:      1.0.0
+ Tags:         geen, selmon, one-column
+ Text Domain:  twentyseventeen-child
+*/
+
+@import url(../twentyseventeen/style.css);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*  ---------------------------------------------  */
+/*  A salmon color theme to match the salmon       */
+/*  in the header Image and the theme of the site. */
+/*  ---------------------------------------------  */
+
+
+/* fontface for the title and social-menu. The title ended up looking slightly spiky/fuzzy
+when I made it larger but I kept it that way because I thought it made the font look
+bear-like. */
+
+@font-face {
+    font-family: cobbler;
+    src: url(FollowWoodwild.ttf);
+}
+
+
+/* Navigation is made into a dark green color */
+
+.navigation-top {
+    background-color: #4D8963;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/* makes the currently visted nav item a pink color */
+
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+    color: #EC799A;
+}
+
+
+/* makes the currently hovered nav item a pink color */
+
+.menu-item a:hover {
+    color: #EC799A;
+}
+
+
+/*makes nav items a salmon color*/
+
+.menu-item a {
+    color: #9F0251;
+    font-size: 120%;
+}
+
+
+/*set the background into a pale green*/
+
+.panel-content,
+.site-footer,
+.single-featured-image-header {
+    background-color: #E7FFE7;
+}
+
+#content {
+    background-color: #E7FFE7;
+}
+
+.entry-footer {
+    background-color: #E7FFE7;
+}
+
+/*remove exess whitepace in footer*/
+
+.site-footer {
+    margin-top: 0px;
+}
+
+
+/*remove “powered by wordpress” */
+
+.site-info {
+    display: none;
+}
+
+
+/* Makes the content titles slightly larger */
+
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title {
+    font-size: 1.3rem;
+}
+
+
+/* set the title font and size */
+
+.site-title a {
+    font-family: cobbler;
+    font-size: 150%;
+}
+
+
+/* removes default underlines under titles and links */
+
+.entry-title a,
+.entry-meta a,
+.page-links a,
+.page-links a .page-number,
+.entry-footer a,
+.entry-footer .cat-links a,
+.entry-footer .tags-links a,
+.edit-link a,
+.post-navigation a,
+.logged-in-as a,
+.comment-navigation a,
+.comment-metadata a,
+.comment-metadata a.comment-edit-link,
+.comment-reply-link,
+a .nav-title,
+.pagination a,
+.comments-pagination a,
+.site-info a,
+.widget .widget-title a,
+.widget ul li a,
+.site-footer .widget-area ul li a,
+.site-footer .widget-area ul li a {
+    box-shadow: none;
+}
+
+
+/* widget horizontal lines  to a dark green*/
+
+.widget ul li,
+.widget ol li {
+    border-bottom-color: #4D8963;
+    border-top-color: #4D8963;
+}
+
+
+/* set up for js animation */
+
+#site-title {
+    position: relative !important;
+    opacity: 0;
+}
+
+
+/* Border around gallery images - not currently used  */
+
+.entry-content a img,
+.widget a img {
+    box-shadow: 0 0 0 6px #D1FFC5;
+}
+
+
+/* adds some padding to the header */
+
+.site-branding {
+    padding: 2em, 0 !important;
+}
+
+
+/* css rules for the social menu title */
+
+#socialTitle {
+    font-family: cobbler;
+    font-size: 2.5rem;
+    color: #E7FFE7;
+    margin: 0 0 0 !important;
+}
+
+/* footer color */
+footer,
+.site-footer,
+#colophon {
+    background-color: #4D8963;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/* add some extra padding to heature image */
+.single-featured-image-header {
+    padding-top: 4%;
+}
+
+
+/* make gallery images fill their container - not currently used*/
+
+.attachment a img {
+    width: 100%;
+    height: 100%;
+}
+
+/* change color to part of comments plugin */
+.wpdiscuz-subscribe-bar {
+    background-color: #D1FFC5 !important;
+}
+
+/* sizing and color for custom icons (social menu)*/
+.faf {
+    font-size: 325% !important;
+    margin-right: 2%;
+    margin-left: 2%;
+    color: #9F0251;
+    margin-bottom: 1%;
+}
+
+.faf:hover {
+    color: #EC799A;
+}
